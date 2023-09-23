@@ -60,9 +60,9 @@ body{
     </head>
 
     <body>
-        <div class="title">LED Screen Remote Control</div>
+        <div class="title">LCD Screen Remote Control</div>
         <div class="input-area">
-            <div class="text">Enter the text you want to send to LED Screen</div>
+            <div class="text">Enter the text you want to send to LCD Screen</div>
             <input class='input' type="text" placeholder="your text (recommended max 32 chr)">
         </div>
         <button class="button">Submit</button>
@@ -74,7 +74,7 @@ body{
         var inputValue = input.value;
         inputValue = inputValue.replace(/\s/g, '_');
         console.log(inputValue);
-        xhttp.open('GET', '/led/'+ inputValue.length + '_'+ inputValue, true);
+        xhttp.open('GET', '/lcd/'+ inputValue.length + '_'+ inputValue, true);
         xhttp.send();
     }
 
